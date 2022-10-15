@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
     /*
     Read 2 variables, named A and B and make the sum of these two variables, assigning its result to the variable X. Print X as shown below. Print endline after the result otherwise you will get “Presentation Error”.
 
@@ -11,7 +10,6 @@ import java.util.Scanner;
 
     Obs.: don't forget the endline after all.
      */
-
 public class Problem1001 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,5 +20,7 @@ public class Problem1001 {
         x = a + b;
 
         System.out.printf("X = %d%n", x);
+
+        sc.close();
     }
 }
