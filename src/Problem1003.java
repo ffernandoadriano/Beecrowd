@@ -1,6 +1,6 @@
 import java.util.Scanner;
     /*
-    Read two integer values, in this case, the variables A and B. After this, calculate the sum between them and assign it to the variable SOMA. Write the value of this variable.
+    Read two integer values, in this case, the variables A and B. After this, calculate the sum between them and assign it to the variable SUM. Write the value of this variable.
 
     Input
     The input file contains 2 integer numbers.
