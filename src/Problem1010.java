@@ -14,7 +14,7 @@ public class Problem1010 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         int codeProduct, unity;
-        double price, valueToPay = 0;
+        double price, valueToPay = 0.0d;
 
         for (int i = 0; i < 2; i++) {
             codeProduct = sc.nextInt();
