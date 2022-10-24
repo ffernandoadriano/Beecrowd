@@ -19,7 +19,7 @@ public class Problem1012 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         double a, b, c;
-        double rectangleTriangleArea = 0.0d, circleArea = 0.0d, pi = 3.14159d, trapeziumArea = 0.0d, squareArea = 0.0d, rectangleArea = 0.0d;
+        double rectangleTriangleArea, circleArea, pi = 3.14159d, trapeziumArea, squareArea, rectangleArea;
 
         a = sc.nextDouble();
         b = sc.nextDouble();
