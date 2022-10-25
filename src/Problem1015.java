@@ -3,7 +3,7 @@ import java.util.Scanner;
     /*
     Read the four values corresponding to the x and y axes of two points in the plane, p1 (x1, y1) and p2 (x2, y2) and calculate the distance between them, showing four decimal places after the comma, according to the formula:
 
-    Distance = <img align="left" alt="Problem105" width="40px" src="https://user-images.githubusercontent.com/96425026/197864402-d32586d0-f38a-45af-b5f5-43f36a020807.png"/>
+    Distance = https://user-images.githubusercontent.com/96425026/197864402-d32586d0-f38a-45af-b5f5-43f36a020807.png
 
     Input
     The input file contains two lines of data. The first one contains two double values: x1 y1 and the second one also contains two double values with one digit after the decimal point: x2 y2.
