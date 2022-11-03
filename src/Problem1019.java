@@ -16,8 +16,8 @@ public class Problem1019 {
         durationSeconds = sc.nextInt();
 
         second = durationSeconds % 60;
-        minute = ((durationSeconds - second) / 60) % 60;
-        hours = (durationSeconds - minute) / 3600;
+        minute = (durationSeconds / 60) % 60;
+        hours = durationSeconds / 3600;
 
         System.out.printf("%d:%d:%d%n", hours, minute, second);
 
