@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Locale;
 import java.util.Scanner;
     /*
@@ -15,28 +16,24 @@ public class Problem1021 {
         Scanner sc = new Scanner(System.in);
         double[] notes = new double[]{100, 50, 20, 10, 5, 2};
         double[] coins = new double[]{1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
-        double monetaryValue;
         int quantityNote, quantityCoin;
 
-        monetaryValue = sc.nextDouble();
-
-        //solution to the penny problem
-        monetaryValue = (monetaryValue * 100) + 0.05;
+        BigDecimal monetaryValue = BigDecimal.valueOf(sc.nextDouble());
 
         System.out.println("NOTAS:");
 
         for (double note : notes) {
-            quantityNote = (int) (monetaryValue / (note * 100));
+            quantityNote = monetaryValue.divide(new BigDecimal(String.valueOf(note))).intValue();
+            monetaryValue = monetaryValue.remainder(new BigDecimal(String.valueOf(note)));
             System.out.printf("%d nota(s) de R$ %.2f%n", quantityNote, note);
-            monetaryValue = monetaryValue % (note * 100);
         }
 
         System.out.println("MOEDAS:");
 
         for (double coin : coins) {
-            quantityCoin = (int) (monetaryValue / (coin * 100));
+            quantityCoin = monetaryValue.divide(new BigDecimal(String.valueOf(coin))).intValue();
+            monetaryValue = monetaryValue.remainder(new BigDecimal(String.valueOf(coin)));
             System.out.printf("%d moeda(s) de R$ %.2f%n", quantityCoin, coin);
-            monetaryValue = monetaryValue % (coin * 100);
         }
 
         sc.close();
