@@ -11,16 +11,16 @@ import java.util.Scanner;
 public class Problem1007 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a, b, c, d, diference;
+        int a, b, c, d, difference;
 
         a = sc.nextInt();
         b = sc.nextInt();
         c = sc.nextInt();
         d = sc.nextInt();
 
-        diference = (a * b - c * d);
+        difference = (a * b - c * d);
 
-        System.out.printf("DIFERENCA = %d%n", diference);
+        System.out.printf("DIFERENCA = %d%n", difference);
 
         sc.close();
     }
